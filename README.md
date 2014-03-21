@@ -10,6 +10,7 @@ tradition unit-testing.
 git clone git@github.com:reiddraper/clojure-transient-test.git
 cd clojure-transient-test
 lein test
+```
 
 ## License
 
