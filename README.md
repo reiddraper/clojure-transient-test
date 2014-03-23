@@ -2,7 +2,9 @@
 
 A project to show how difficult finding
 [CLJ-1285](http://dev.clojure.org/jira/browse/CLJ-1285) would have been with
-tradition unit-testing.
+traditional unit-testing. To compare property-based testing with traditional
+unit-testing, see the [unit-tests](test/transient_test/unit_test.clj) and the
+[property-based test](test/transient_test/property_test.clj).
 
 ## Usage
 
