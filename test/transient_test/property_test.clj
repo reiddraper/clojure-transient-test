@@ -49,10 +49,16 @@
       (persistent! applied)
       applied)))
 
+(defn filter-actions
+  [actions]
+  (filter (fn [[a & args]]
+            (#{:conj :disj} a))
+          actions))
+
 (def transient-property
   (prop/for-all
     [a (gen/vector gen-action)]
     (= (apply-actions #{} a)
-       (apply-actions #{} a))))
+       (apply-actions #{} (filter-actions a)))))
 
 (defspec transient-property-test 1000000 transient-property)
