@@ -61,4 +61,4 @@
     (= (apply-actions #{} a)
        (apply-actions #{} (filter-actions a)))))
 
-(defspec transient-property-test 1000000 transient-property)
+(defspec transient-property-test 1000 transient-property)
